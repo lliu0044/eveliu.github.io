@@ -3,86 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eve Liu | System Developer & Data Architect</title>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>Eve Liu | Data Expert & System Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        :root { --main: #0ea5e9; --bg: #0f172a; --card: #1e293b; --text: #f1f5f9; }
-        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); margin: 0; line-height: 1.6; }
-        .code-font { font-family: 'JetBrains Mono', monospace; }
-        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-        
-        header { padding: 100px 0 60px; border-bottom: 1px solid #334155; }
-        h1 { font-size: 3rem; margin: 0; color: var(--main); }
-        .tagline { font-size: 1.25rem; opacity: 0.8; margin-top: 10px; }
-
-        .section-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.2rem; color: var(--main); margin-bottom: 30px; }
-        
-        .project-card { background: var(--card); padding: 30px; border-radius: 12px; margin-bottom: 25px; border: 1px solid #334155; transition: 0.2s; }
-        .project-card:hover { border-color: var(--main); }
-        .project-card h3 { margin-top: 0; color: var(--main); }
-        
-        .skill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; }
-        .skill-tag { background: #334155; padding: 8px 15px; border-radius: 6px; font-size: 0.9rem; text-align: center; }
-
-        footer { text-align: center; padding: 60px 0; opacity: 0.5; font-size: 0.8rem; }
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; }
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); }
+        .accent-gradient { background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%); }
+        .bento-card { transition: all 0.3s ease; border: 1px solid #e2e8f0; }
+        .bento-card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); border-color: #0ea5e9; }
     </style>
 </head>
-<body>
+<body class="antialiased">
 
-<div class="container">
-    <header>
-        <h1 class="code-font">Eve Liu</h1>
-        <p class="tagline">System Developer specializing in utility market automation and data architecture.</p>
-    </header>
-
-    <section style="margin-top: 80px;">
-        <h2 class="section-title">Core Systems Portfolio</h2>
-        
-        <div class="project-card">
-            <h3 class="code-font">Agora Retail Billing Ecosystem</h3>
-            <p>Architected and maintained complex billing systems for the energy sector. Managed the 2026 sub-network allocation rollover, ensuring seamless data integrity for the new calendar year.</p>
-            <div class="skill-grid">
-                <span class="skill-tag">SQL Server</span>
-                <span class="skill-tag">Data Migration</span>
-                <span class="skill-tag">Logic Rollovers</span>
+    <nav class="sticky top-0 z-50 glass px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="font-bold text-xl tracking-tighter">EVE<span class="text-sky-500">LIU</span></span>
+            <div class="space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-sky-500">About</a>
+                <a href="#experience" class="hover:text-sky-500">Experience</a>
+                <a href="#skills" class="hover:text-sky-500">Skills</a>
+                <a href="mailto:echolynn0121@gmail.com" class="bg-slate-900 text-white px-5 py-2 rounded-full hover:bg-sky-600 transition">Contact</a>
             </div>
         </div>
+    </nav>
 
-        <div class="project-card">
-            <h3 class="code-font">AEMO Submission Models</h3>
-            <p>Developed automated data submission models compliant with Australian Energy Market Operator (AEMO) standards. Leveraged Python and SQL views to automate high-stakes regulatory reporting.</p>
-            <div class="skill-grid">
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">Market Compliance</span>
-                <span class="skill-tag">Automation</span>
+    <section id="about" class="max-w-6xl mx-auto px-6 pt-20 pb-32 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <h1 class="text-6xl font-bold leading-tight mb-6 text-slate-900">
+                Turning Complex Data into <span class="text-sky-500">Digital Insights.</span>
+            </h1>
+            <p class="text-lg text-slate-600 mb-8 max-w-lg">
+                I am a Data Expert and Export Coordinator based in Perth, specializing in building automated ETL pipelines, interactive Power BI dashboards, and scalable data infrastructure.
+            </p>
+            <div class="flex gap-4">
+                <a href="#experience" class="accent-gradient text-white px-8 py-3 rounded-xl font-semibold">View Projects</a>
+                <div class="flex items-center text-sm font-medium text-slate-500">
+                    <span class="relative flex h-3 w-3 mr-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                    </span>
+                    Available for new opportunities
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:block">
+            <div class="h-96 w-full rounded-3xl accent-gradient opacity-10 flex items-center justify-center">
+                <svg width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
             </div>
         </div>
     </section>
 
-    <section style="margin-top: 80px;">
-        <h2 class="section-title">Technical Stack</h2>
-        <div class="skill-grid">
-            <div class="skill-tag">SQL Server (T-SQL)</div>
-            <div class="skill-tag">Python</div>
-            <div class="skill-tag">Power Automate</div>
-            <div class="skill-tag">Power BI</div>
-            <div class="skill-tag">Azure Functions</div>
-            <div class="skill-tag">REST APIs</div>
+    <section id="experience" class="bg-white py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 text-center">Professional Journey</h2>
+            <div class="space-y-12">
+                <div class="grid md:grid-cols-4 gap-4">
+                    <div class="text-slate-400 font-medium">2023 — Present</div>
+                    <div class="md:col-span-3 pb-12 border-l-2 border-slate-100 pl-8 relative">
+                        <div class="absolute w-4 h-4 bg-sky-500 rounded-full -left-[9px] top-1"></div>
+                        <h3 class="text-xl font-bold">Data Analyst & Consultant BA</h3>
+                        <p class="text-sky-600 font-medium mb-4">Solstice Energy, Tasmania</p>
+                        <ul class="text-slate-600 space-y-3 list-disc ml-4">
+                            <li>Developed a <strong>Max Daily Consumption Billing solution</strong>, improving accuracy for government compliance.</li>
+                            <li>Engineered robust ETL workflows integrating APIs, SharePoint, and SQL databases.</li>
+                            <li>Supported the implementation of <strong>Snowflake</strong> through schema design and migration planning.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-4 gap-4">
+                    <div class="text-slate-400 font-medium">2021 — 2023</div>
+                    <div class="md:col-span-3 pb-12 border-l-2 border-slate-100 pl-8 relative">
+                        <div class="absolute w-4 h-4 bg-slate-200 rounded-full -left-[9px] top-1"></div>
+                        <h3 class="text-xl font-bold">Database Administrator & IT Graduate</h3>
+                        <p class="text-sky-600 font-medium mb-4">HS Fresh Group</p>
+                        <p class="text-slate-600">Delivered departmental Power BI dashboards for HR, Finance, and Sales. Designed database architectures ensuring 100% data integrity across ERP systems.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section style="margin-top: 80px;">
-        <h2 class="section-title">Creative Exploration</h2>
-        <div class="project-card" style="border-left: 4px solid #f59e0b;">
-            <h3 class="code-font">Perth-Centric Indie Game Project</h3>
-            <p>Design lead for a low-poly exploration and decryption game set in Fremantle and Perth. Focused on procedural fishing mechanics and Noongar cultural narrative elements.</p>
+    <section id="skills" class="max-w-6xl mx-auto px-6 py-24">
+        <h2 class="text-3xl font-bold mb-12 text-center">Technical Ecosystem</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bento-card bg-white p-8 rounded-3xl md:col-span-2">
+                <h4 class="text-sky-500 font-bold text-sm uppercase tracking-widest mb-2">Data Engineering</h4>
+                <h3 class="text-2xl font-bold mb-4">SQL, Python & ETL</h3>
+                <p class="text-slate-600">Expertise in query optimization, SSIS, Hevo, and Mage for automating complex data pipelines.</p>
+            </div>
+            <div class="bento-card bg-slate-900 p-8 rounded-3xl text-white">
+                <h4 class="text-sky-400 font-bold text-sm uppercase tracking-widest mb-2">Visualization</h4>
+                <h3 class="text-2xl font-bold mb-4">Power BI</h3>
+                <p class="text-slate-400">Transforming raw datasets into interactive strategic dashboards.</p>
+            </div>
+            <div class="bento-card bg-white p-8 rounded-3xl">
+                <h4 class="text-sky-500 font-bold text-sm uppercase tracking-widest mb-2">Business</h4>
+                <h3 class="text-xl font-bold mb-4">BPMN 2.0 & Agile</h3>
+                <p class="text-slate-600">Streamlining operations through process mapping and Agile delivery.</p>
+            </div>
+            <div class="bento-card bg-white p-8 rounded-3xl md:col-span-2">
+                <h4 class="text-sky-500 font-bold text-sm uppercase tracking-widest mb-2">Analytics</h4>
+                <h3 class="text-2xl font-bold mb-4">Data Governance</h3>
+                <p class="text-slate-600">Developing data dictionaries, lineage diagrams, and metadata records for long-term scalability.</p>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <p>Built with GitHub Pages | Crawley, Western Australia</p>
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div>
+                <h2 class="text-2xl font-bold mb-2">Linyi (Eve) Liu</h2>
+                <p class="text-slate-400">Data Analyst | System Developer</p>
+            </div>
+            <div class="text-center md:text-right">
+                <p class="text-slate-400 mb-2">555 Wellington St, Perth, 6000</p>
+                <p class="font-bold">echolynn0121@gmail.com</p>
+            </div>
+        </div>
     </footer>
-</div>
 
 </body>
 </html>
